@@ -1,0 +1,7 @@
+option solver "../cplex";
+model final.mod;
+data final.dat;
+solve;
+display{s in 1..S} sum{i in 1..N,j in 1..N} K[i,j,s] * i;
+display{s in 1..S} sum{i in 1..N,j in 1..N} K[i,j,s] * j;
+display{s in 1..S} sum{i in 1..N,j in 1..N} K[i,j,s] * Load[i,j,s];display {i in 1..N} Available_bike[i]/ Total_cap[i];
