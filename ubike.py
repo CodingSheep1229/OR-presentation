@@ -194,6 +194,6 @@ print("DONE")
 # cmd = "open result" + now
 # os.system(cmd)
 
-# os.system('git add *')
-# os.system('git commit -m "hi"')
-# os.system('git push origin master')
+os.system('git add *')
+os.system('git commit -m "hi"')
+os.system('git push origin master')
